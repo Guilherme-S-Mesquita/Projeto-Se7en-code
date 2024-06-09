@@ -1,0 +1,256 @@
+*{
+    font-family: "Share Tech Mono", monospace;
+    
+}
+@import url(https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap);
+body{
+    background-color: black;
+    /* background-repeat: no-repeat;
+    background-image: url(/img/fundo-home.png);
+    max-widt
+    background-size: cover; */
+   
+    /* background: linear-gradient(to right,  #000000,rgb(92, 0, 128),rgb(127, 32, 165),rgb(133, 28, 175)); */
+  
+}
+.container-fluid a{
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+
+#logo{
+    width: 100px;
+    height: auto;
+    
+}
+.navbar{
+    box-shadow: 5px 5px 20px 0.5px rgb(92, 0, 128);
+    padding:0.7%;  
+    font-weight: bold;
+}
+.navbar ul{
+    
+}
+
+
+.legenda{
+    margin-top: 10vw;
+    margin-bottom: 50vh;
+}
+.legenda p{
+    
+    color: rgb(255, 255, 255);
+
+    font-size: larger;
+    font-weight: 600;
+    text-shadow: 10px color white;
+}
+@-webkit-keyframes text-flicker-in-glow{
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}    
+
+@keyframes text-flicker-in-glow{
+    100%{
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 60px rgba(255, 255, 255, 0.45),
+        0 0 110px rgba(255, 255, 255, 0.25),
+        0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}
+.legenda p {
+    -webkit-animation: text-flicker-in-glow 2s linear both;
+    animation: text-flicker-in-glow 2s linear both;
+    margin: 50px;   
+    line-height: 1.5;       /*Controla a altura da linha */
+    letter-spacing: 0.1%;    /*Controla o espaçamento entre os caracteres igualmente */
+    word-spacing: 0.6%; 
+    white-space: pre-line;   /*Quebra de linha  */
+    text-align: justify;
+    
+} 
+
+/* Novas classes adicionadas para alinhar verticalmente o botão */
+.align-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.legenda button {
+    background-color: rgb(192, 18, 226);
+    transition: 0.8s;
+    border: 1px solid blueviolet;
+    border-radius: 7px;
+    padding: 0.7%;
+    font-weight: bold;
+    font-size: large;
+    width: 40%; 
+}
+
+.legenda button:hover {
+    transition: 0.8s;
+    background-color: rgb(192, 18, 226);
+    box-shadow: 3px 3px 3px 7px rgb(192, 18, 226);
+    border: none;
+}
+
+
+
+.nav-item:hover{
+    border-bottom: 3px solid rgb(192, 18, 226);
+    transition: 0.2s ease-out;
+}
+.btn{
+    border: 1px solid rgb(192, 18, 226);;
+    padding: 7px;
+    transition: 1s;
+}
+.btn:hover{
+    color:white;
+    background-color: purple;
+    box-shadow: 2px 2px 2px 5px purple;
+    transition: 0.4s;
+}
+
+h5{
+    color:  rgb(192, 18, 226);
+    text-align: justify;
+
+}
+.calica{
+    color:  rgb(192, 18, 226);
+}
+hr{
+
+    color:  rgb(192, 18, 226);
+    box-shadow: 0px 0x 20px  rgb(192, 18, 226);
+    border: 2px solid;
+
+}
+/* .container{
+    box-shadow: 5px 5px 20px 0.5px rgb(192, 18, 226), inset 5px 5px 20px 0.5px  rgb(192, 18, 226);
+
+} */
+.sobre-nos{
+    margin-bottom: 30vh;
+    padding-bottom: 0vh;
+}
+.sobre-nos img{
+    border-radius: 30px;
+}
+.sobre-nos p {
+    font-weight: 400;
+    font-family: "Share Tech Mono", monospace; 
+}
+
+.nosso-objetivo{
+    font-weight: 500;
+    margin-bottom: 10vw;
+    margin-top: 4vw;
+    font-family: "Share Tech Mono"; 
+    padding-bottom: 20vw;
+
+
+}
+.nosso-objetivo h1{
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 40px;
+    font-family: "Share Tech Mono", monospace; 
+    color: #7820d8;
+    margin: 0;
+}
+
+.carousel-inner{
+    background-color: #7920d800;
+    margin-bottom: 30vh;
+}
+.carousel-inner .carousel-item{
+    transition: all 0.8s;
+  
+}
+.carousel-inner .card{
+    background-color: #7920d800;
+   
+  
+}
+.carousel-inner .card-body{
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+    
+    &::after{
+        animation: text-reveal 2s cubic-bezier(0.85, 0, 0.15, 1)  forwards;
+        animation-duration: 2s;
+        background-color: rgb(92, 0, 128);
+        bottom: 0;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+     
+     
+    }
+}
+
+@keyframes text-reveal {
+    from{
+
+        transform: translateY(-10%);
+    }
+    to{
+        transform: translateX(-101%);
+    }
+}
+@keyframe degrade{
+    to{
+        opacity: 1;
+
+    }
+
+}
+.carousel-inner img{
+    align-items: center;
+    border-radius: 50px;
+    max-height: 300px;
+    max-width: 250px;
+
+}
+
+
+
+p{
+    text-align: justify;
+}
+
+
+.title-sobre{
+    color:  rgb(192, 18, 226)
+}
+.h2{
+    font-weight: bold;
+}
+.card-text{
+    color:   rgb(192, 18, 226);
+    font-weight: bold;
+
+}
+h6{
+    color: rgb(92, 0, 128);
+    font-weight: bold;
+    font-size: x-large;  
+    text-align: justify;
+}
+img{
+    box-shadow: 0px 0px 20px  rgb(192, 18, 226);
+}
+
