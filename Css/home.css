@@ -1,256 +1,295 @@
-*{
-    font-family: "Share Tech Mono", monospace;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* fundo da tela */
+body {
+    background-color: #131212;
+
+}
+
+/* ------------------------------COMEÇO APRESENTAÇÃO------------------------ */
+.containerApresentacao {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.linha{
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    background-color: #8C52FF;
+    width: 4px;
+    height:170vh;
+    box-shadow: 0px 10px 10px #000000a2;
+    position: relative; 
+    bottom: 5vh;
+    transform: translateX(61vw)scale(1) rotate(-50deg);
+     z-index: -1;   
+}
+.linha1{
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    background-color: #8C52FF;
+    width: 4px;
+    height:290vh;
+    box-shadow: 0px 10px 10px #000000a2;
+    position: relative; 
+    bottom: 5vh;
+    transform: translateX(30vw)scale(1) rotate(60deg);
+     z-index: -1;   
+}
+
+.conteudoApresentacao {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.coluna1,
+.coluna2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+
+.colunaConteudo1 {
+    width: 50vw;
+    height: 30vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 10vh;
+    position: relative;
+
+  
+
+}
+
+.colunaConteudo2 {
+    width: 50vw;
+    height: 30vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 10vh;
+    position: relative;
+    left: 5vw;
+
+
+
+}
+
+.globo {
+    width: 22vw;
+    height: 40vh;
+
+
+}
+
+.textoGlobo {
+    font-weight: bold;
+    font-size: 17px;
+    color: aliceblue;
+    margin-top: 4vh;
+    
+
+}
+
+.seven {
+    width: 25vw;
+}
+
+.btnSeven {
+    color: aliceblue;
+    background: none;
+    border-radius: 30px;
+    display: flex;
+    width: 7vw;
+    height: 4vh;
+    content: " ";
+    overflow: hidden;
+    border-color: rgb(192, 18, 226);
+
+
+}
+
+.btnSeven,
+p {
+    font-size: 13px;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    margin-top: 0.5vh;
+
+}
+
+
+
+
+
+
+/* sobre nós */
+.containerSobre{
+    margin-top: 10vh;
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
     
 }
-@import url(https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap);
-body{
-    background-color: black;
-    /* background-repeat: no-repeat;
-    background-image: url(/img/fundo-home.png);
-    max-widt
-    background-size: cover; */
-   
-    /* background: linear-gradient(to right,  #000000,rgb(92, 0, 128),rgb(127, 32, 165),rgb(133, 28, 175)); */
-  
+.sobreNós {
+    background-color: #9f76f9c0;
+    width: 80vw;
+    height: 35vh;
+    border-radius: 45px;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
 }
-.container-fluid a{
-    color: white;
+
+.sobreNós2 {
+    width: 20vw;
+    height: 25vh;
+    border-radius: 25px;
+    display: flex;
+    justify-content: start;   
+    align-items: start; 
+    margin-right: 2vw;
+    margin-left: 2vw;
+    flex-direction: row;
+    background-color: #5100ffc0;
+
 }
-li{
+
+.fotoGrupo{
+    width: 20vw;
+    height: 25vh;
+    border-radius: 25px;   
+}
+.textoGrupo{
+    font-size: xx-large;
+    font-weight: bold;
+    width: 45vw;
+    height: 20vh;
+}
+.textoFoto{
+    width: 50vw;
+    height:10vh;
+}
+.tituloFoto{
+    
+}
+/* ------------------------------------------------------NOSSOS PROJETOS---------------------------------------------------------------- */
+.flipLegenda {
+    display: flex;
+    margin: 40px;
+    
+}
+
+.containerCard {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    margin-top: 100px;
+
+
+}
+
+.containerCard:hover .flip {
+    transform: rotateY(180deg);
+
+}
+
+.flip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s;
+
+
+}
+
+.frente,
+.verso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 15px 10px #000000a2;
+    border-radius: 25px;
+    backface-visibility: hidden;
+
+}
+
+.frente {
+    background-color: rgb(92, 0, 128);
+
+}
+
+.verso {
+    background-color: rgb(192, 18, 226);
+    transform: rotateY(180deg);
+
+}
+
+.cadrPosition {
+    display: flex;
+    flex-direction: row;
+}
+.listraSombra{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 10px 10px #000000a2;
+    position: relative; 
+    bottom: 5vh;
+    z-index: -1;
+
+}
+
+
+
+
+
+/* -----------------------------------------------FOOTER-------------------------------------------------------- */
+
+
+li {
     list-style-type: none;
 }
 
-#logo{
+#logo {
     width: 100px;
     height: auto;
-    
+
 }
-.navbar{
+
+.navbar {
     box-shadow: 5px 5px 20px 0.5px rgb(92, 0, 128);
-    padding:0.7%;  
-    font-weight: bold;
-}
-.navbar ul{
-    
-}
-
-
-.legenda{
-    margin-top: 10vw;
-    margin-bottom: 50vh;
-}
-.legenda p{
-    
-    color: rgb(255, 255, 255);
-
-    font-size: larger;
-    font-weight: 600;
-    text-shadow: 10px color white;
-}
-@-webkit-keyframes text-flicker-in-glow{
-    100% {
-        opacity: 1;
-        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
-    }
-}    
-
-@keyframes text-flicker-in-glow{
-    100%{
-        opacity: 1;
-        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
-        0 0 60px rgba(255, 255, 255, 0.45),
-        0 0 110px rgba(255, 255, 255, 0.25),
-        0 0 100px rgba(255, 255, 255, 0.1);
-    }
-}
-.legenda p {
-    -webkit-animation: text-flicker-in-glow 2s linear both;
-    animation: text-flicker-in-glow 2s linear both;
-    margin: 50px;   
-    line-height: 1.5;       /*Controla a altura da linha */
-    letter-spacing: 0.1%;    /*Controla o espaçamento entre os caracteres igualmente */
-    word-spacing: 0.6%; 
-    white-space: pre-line;   /*Quebra de linha  */
-    text-align: justify;
-    
-} 
-
-/* Novas classes adicionadas para alinhar verticalmente o botão */
-.align-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.legenda button {
-    background-color: rgb(192, 18, 226);
-    transition: 0.8s;
-    border: 1px solid blueviolet;
-    border-radius: 7px;
     padding: 0.7%;
     font-weight: bold;
-    font-size: large;
-    width: 40%; 
 }
 
-.legenda button:hover {
-    transition: 0.8s;
-    background-color: rgb(192, 18, 226);
-    box-shadow: 3px 3px 3px 7px rgb(192, 18, 226);
-    border: none;
-}
-
-
-
-.nav-item:hover{
+.nav-item:hover {
     border-bottom: 3px solid rgb(192, 18, 226);
     transition: 0.2s ease-out;
 }
-.btn{
-    border: 1px solid rgb(192, 18, 226);;
-    padding: 7px;
-    transition: 1s;
-}
-.btn:hover{
-    color:white;
-    background-color: purple;
-    box-shadow: 2px 2px 2px 5px purple;
-    transition: 0.4s;
-}
-
-h5{
-    color:  rgb(192, 18, 226);
-    text-align: justify;
-
-}
-.calica{
-    color:  rgb(192, 18, 226);
-}
-hr{
-
-    color:  rgb(192, 18, 226);
-    box-shadow: 0px 0x 20px  rgb(192, 18, 226);
-    border: 2px solid;
-
-}
-/* .container{
-    box-shadow: 5px 5px 20px 0.5px rgb(192, 18, 226), inset 5px 5px 20px 0.5px  rgb(192, 18, 226);
-
-} */
-.sobre-nos{
-    margin-bottom: 30vh;
-    padding-bottom: 0vh;
-}
-.sobre-nos img{
-    border-radius: 30px;
-}
-.sobre-nos p {
-    font-weight: 400;
-    font-family: "Share Tech Mono", monospace; 
-}
-
-.nosso-objetivo{
-    font-weight: 500;
-    margin-bottom: 10vw;
-    margin-top: 4vw;
-    font-family: "Share Tech Mono"; 
-    padding-bottom: 20vw;
-
-
-}
-.nosso-objetivo h1{
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 40px;
-    font-family: "Share Tech Mono", monospace; 
-    color: #7820d8;
-    margin: 0;
-}
-
-.carousel-inner{
-    background-color: #7920d800;
-    margin-bottom: 30vh;
-}
-.carousel-inner .carousel-item{
-    transition: all 0.8s;
-  
-}
-.carousel-inner .card{
-    background-color: #7920d800;
-   
-  
-}
-.carousel-inner .card-body{
-    overflow: hidden;
-    position: relative;
-    border-radius: 30px;
-    
-    &::after{
-        animation: text-reveal 2s cubic-bezier(0.85, 0, 0.15, 1)  forwards;
-        animation-duration: 2s;
-        background-color: rgb(92, 0, 128);
-        bottom: 0;
-        content: '';
-        display: block;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-     
-     
-    }
-}
-
-@keyframes text-reveal {
-    from{
-
-        transform: translateY(-10%);
-    }
-    to{
-        transform: translateX(-101%);
-    }
-}
-@keyframe degrade{
-    to{
-        opacity: 1;
-
-    }
-
-}
-.carousel-inner img{
-    align-items: center;
-    border-radius: 50px;
-    max-height: 300px;
-    max-width: 250px;
-
-}
-
-
-
-p{
-    text-align: justify;
-}
-
-
-.title-sobre{
-    color:  rgb(192, 18, 226)
-}
-.h2{
-    font-weight: bold;
-}
-.card-text{
-    color:   rgb(192, 18, 226);
-    font-weight: bold;
-
-}
-h6{
-    color: rgb(92, 0, 128);
-    font-weight: bold;
-    font-size: x-large;  
-    text-align: justify;
-}
-img{
-    box-shadow: 0px 0px 20px  rgb(192, 18, 226);
-}
-
