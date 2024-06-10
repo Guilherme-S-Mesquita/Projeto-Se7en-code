@@ -6,11 +6,15 @@
 
 /* ------------------------------------------------------Cor De Fundo ---------------------------------------------------------------- */
 body {
-    background-color: #131212;
+    background-color: #fcfcfc;
 
 }
-
 /* ------------------------------------------------------COMEÇO APRESENTAÇÃO---------------------------------------------------------------- */
+
+a .nav-item {
+    color:#000000a2
+}
+
 .containerApresentacao {
     width: 100vw;
     height: 80vh;
@@ -27,7 +31,7 @@ body {
     display: flex;
     background-color: #8C52FF;
     width: 4px;
-    height:170vh;
+    height:156vh;
     box-shadow: 0px 10px 10px #000000a2;
     position: relative; 
     bottom: 5vh;
@@ -38,9 +42,9 @@ body {
     position: absolute;
     top: 10vh;
     display: flex;
-    background-color: #8C52FF;
+    background-color: #070016;
     width: 4px;
-    height:290vh;
+    height:199vh;
     box-shadow: 0px 10px 10px #000000a2;
     position: relative; 
     bottom: 5vh;
@@ -96,8 +100,9 @@ body {
 }
 
 .globo {
-    width: 22vw;
-    height: 40vh;
+    width: 30vw;
+    height: 50vh;
+    margin-top: 50px;
 
 
 }
@@ -105,7 +110,7 @@ body {
 .textoGlobo {
     font-weight: bold;
     font-size: 17px;
-    color: aliceblue;
+    color: rgb(1, 1, 1);
     margin-top: 4vh;
     
 
@@ -124,7 +129,7 @@ body {
     height: 4vh;
     content: " ";
     overflow: hidden;
-    border-color: rgb(192, 18, 226);
+    border-color: #8C52FF;
 
 
 }
@@ -136,6 +141,7 @@ p {
     align-items: start;
     position: relative;
     margin-top: 0.5vh;
+    color: #000000a2;
 
 }
 
@@ -155,7 +161,7 @@ p {
     
 }
 .sobreNós {
-    background-color: rgb(192, 18, 226) ;
+    background-color: #8C52FF ;
     width: 80vw;
     height: 35vh;
     border-radius: 45px;
@@ -176,12 +182,12 @@ p {
     margin-right: 2vw;
     margin-left: 2vw;
     flex-direction: row;
-    background-color: #5100ffc0;
+    background-color: #8C52FF ;
 
 }
 
 .fotoGrupo{
-    box-shadow: 0px 10px 20px #000;
+    box-shadow: 0px 10px 20px #0000009a;
     width: 20vw;
     height: 25vh;
     border-radius: 25px;   
@@ -192,12 +198,14 @@ p {
     height: 20vh;
     word-spacing: 1px; 
     
+    
 }
 .textoSobre{
     font-weight: bold;
     width: 45vw;
     height: 20vh;
     word-spacing: 1px; 
+    margin-bottom: 50px;
 }
 
 .textoFoto{
@@ -212,7 +220,7 @@ p {
 
 /* ------------------------------------------------------NOSSOS PROJETOS---------------------------------------------------------------- */
 .flipLegenda {
-    color: white;
+    color: #8C52FF ;
     display: flex;
     margin: 40px;
     
@@ -220,8 +228,8 @@ p {
 
 .containerCard {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin-top: 100px;
     margin-top: 100px;
 
@@ -248,7 +256,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    box-shadow: 0px 15px 10px #000000a2;
+    box-shadow: 0px 15px 10px #0a0a0aa2;
     border-radius: 25px;
     backface-visibility: hidden;
 
@@ -260,7 +268,7 @@ p {
 }
 
 .verso {
-    background-color: rgb(192, 18, 226);
+    background-color: #8C52FF;
     transform: rotateY(180deg);
 
 }
@@ -271,10 +279,10 @@ p {
 }
 .listraSombra{
     display: flex;
-    background-color: white;
+    background-color: #8C52FF;
     width: 100%;
     height: 70px;
-    box-shadow: 0px 10px 10px #000000a2;
+    box-shadow: 0px 10px 10px #0000007b;
     position: relative; 
     bottom: 5vh;
     z-index: -1;
@@ -299,7 +307,7 @@ li {
 }
 
 .navbar {
-    box-shadow: 5px 5px 20px 0.5px rgb(92, 0, 128);
+    box-shadow: 5px 5px 20px 0.5px  #8C52FF;
     padding: 0.7%;
     font-weight: bold;
 }
@@ -310,3 +318,7 @@ li {
 }
 
 .textoFooter{}
+
+h2 {
+    color: #070016;
+}
