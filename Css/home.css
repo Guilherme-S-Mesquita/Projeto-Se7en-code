@@ -9,6 +9,38 @@ body {
     background-color: #fcfcfc;
 
 }
+
+
+
+
+/* ------------------------------------------------------------NAVBAR--------------------------------------------------------- */
+li {
+    list-style-type: none;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+
+}
+
+.navbar {
+    box-shadow: 5px 5px 20px 0.5px  #8C52FF;
+    padding: 0.7%;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid rgb(192, 18, 226);
+    transition: 0.2s ease-out;
+}
+
+.linkNav{
+    color: black;
+}
+
+
+
 /* ------------------------------------------------------COMEÇO APRESENTAÇÃO---------------------------------------------------------------- */
 
 a .nav-item {
@@ -29,7 +61,7 @@ a .nav-item {
     position: absolute;
     top: 10vh;
     display: flex;
-    background-color: #8C52FF;
+    background-color: #070016;
     width: 4px;
     height:156vh;
     box-shadow: 0px 10px 10px #000000a2;
@@ -42,7 +74,7 @@ a .nav-item {
     position: absolute;
     top: 10vh;
     display: flex;
-    background-color: #070016;
+    background-color: #8C52FF;
     width: 4px;
     height:199vh;
     box-shadow: 0px 10px 10px #000000a2;
@@ -79,7 +111,7 @@ a .nav-item {
     align-items:center;
     margin-bottom: 10vh;
     position: relative;
-
+    right: 9vw;
   
 
 }
@@ -103,6 +135,8 @@ a .nav-item {
     width: 30vw;
     height: 50vh;
     margin-top: 50px;
+    position: relative;
+   
 
 
 }
@@ -112,12 +146,17 @@ a .nav-item {
     font-size: 17px;
     color: rgb(1, 1, 1);
     margin-top: 4vh;
+    position: relative;
+    left: 8vw;
+    bottom: 5vh;
     
 
 }
 
 .seven {
     width: 25vw;
+    position: relative;
+    top:4vh;
 }
 
 .btnSeven {
@@ -125,11 +164,14 @@ a .nav-item {
     background: none;
     border-radius: 30px;
     display: flex;
-    width: 7vw;
-    height: 4vh;
+    width: 8vw;
+    height: 5vh;
     content: " ";
-    overflow: hidden;
+    text-align: center;
     border-color: #8C52FF;
+    position: relative;
+    right: 20vw;
+
 
 
 }
@@ -140,10 +182,12 @@ p {
     justify-content: center;
     align-items: start;
     position: relative;
-    margin-top: 0.5vh;
+    margin-top: 0.7vh;
+    right: 0.1vw;
     color: #000000a2;
 
 }
+
 
 
 
@@ -161,7 +205,7 @@ p {
     
 }
 .sobreNós {
-    background-color: #8C52FF ;
+    background-color: #8c52ff6b ;
     width: 80vw;
     height: 35vh;
     border-radius: 45px;
@@ -193,11 +237,12 @@ p {
     border-radius: 25px;   
 }
 .textoSobre{
-    font-size: 16px;
+    font-size: 22px;
     width: 45vw;
     height: 20vh;
     word-spacing: 1px; 
-    
+    left: 8px;
+    top: 5vh;
     
 }
 .textoSobre{
@@ -296,26 +341,7 @@ p {
 /* -----------------------------------------------FOOTER-------------------------------------------------------- */
 
 
-li {
-    list-style-type: none;
-}
 
-#logo {
-    width: 100px;
-    height: auto;
-
-}
-
-.navbar {
-    box-shadow: 5px 5px 20px 0.5px  #8C52FF;
-    padding: 0.7%;
-    font-weight: bold;
-}
-
-.nav-item:hover {
-    border-bottom: 3px solid rgb(192, 18, 226);
-    transition: 0.2s ease-out;
-}
 
 .textoFooter{}
 
