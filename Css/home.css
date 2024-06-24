@@ -448,3 +448,19 @@ p {
 h2 {
     color: #070016;
 }
+
+
+
+/* ---------------------------------------Contatoform----------------------------------------------------------- */
+
+
+.form-contato input{
+    background-color: #ADACAF;
+    border-radius: 90px;
+    height: 5vh;
+    width:30vw;
+}
+
+.form-contato{
+text-align: left;
+}
