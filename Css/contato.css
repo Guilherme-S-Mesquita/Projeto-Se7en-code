@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------NAVBAR--------------------------------------------------------- */
+li {
+    list-style-type: none;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+
+}
+
+.navbar {
+    box-shadow: 5px 5px 20px 0.5px  #8C52FF;
+    padding: 0.7%;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid rgb(192, 18, 226);
+    transition: 0.2s ease-out;
+}
+
+.linkNav{
+    color: black;
+}
+/* ----------- formulario---------------------- */
+
+.form-control{
+    background-color: #ADACAF;
+    border-radius: 90px;
+    height: 5vh;
+    width:30vw;
+    left:20%;
+}
+.form-control-1{
+    background-color: #ADACAF;
+    border-radius: 90px;
+    height: 15vh;
+    width:30vw;
+    left:20%;
+}

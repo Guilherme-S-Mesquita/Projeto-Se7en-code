@@ -24,21 +24,121 @@ li {
 
 }
 
-.navbar {
-    box-shadow: 5px 5px 20px 0.5px  #8C52FF;
-    padding: 0.7%;
-    font-weight: bold;
+
+
+.nav-item {
+    position: relative;
+    padding-bottom: 5px; /* Ajuste conforme necessário */
+  
+
 }
 
-.nav-item:hover {
-    border-bottom: 3px solid rgb(192, 18, 226);
-    transition: 0.2s ease-out;
+.nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: rgb(192, 18, 226);
+    transition: width 0.6s ease-out;
+   
 }
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+
 
 .linkNav{
     color: black;
 }
+/* --------------------------------MODO ESCURO E CLARO----------------------- */
+body[data-theme="dark"] {
+    transition: 0.5s;
+    background-color: #292828;
+    color: #fbf9f1;
+   
+        /* background-image: url(/img/Background-Dark.png);
+        background-repeat: no-repeat;
+        background-position:top; */
+      
 
+    
+    /* Estilo para parágrafos no tema escuro */
+    p {
+        color: white;
+    }
+    #btn-dark-mode {
+        color: rgb(226, 212, 18);
+        transition: 0.8s;        
+    }
+    #btn-dark-mode:hover {
+        transition: 0.8s; /* Adicionado a transição */
+        transform: scale(1.2); /* Corrigido o valor da transformação */
+        color: rgb(226, 212, 18);
+    }
+    .visually-hidden {
+        color: white;
+    }
+    a {
+        color: white;
+    }
+    .sobre-nos {
+        background-color: rgb(61, 59, 64);
+    }
+    .card-title {
+        display: flex;
+        color: white;
+    }
+    .card-text {
+        color: rgb(192, 18, 226);
+        font-weight: bold;
+    }
+}
+
+
+/* Tema claro */
+body[data-theme="light"] {
+    transition: 0.5s;
+    background-color: #fbf9f1;
+    color: #222121;
+
+        /* Estilo para o botão de alternar tema no tema claro */
+    button{
+        color: white;
+    }
+    button:hover{
+        color: black;
+    }
+    .carousel-control-next-icon{
+        background-color: #222;
+        color: black;
+    }
+    .carousel-control-prev-icon{
+      
+        color: black;
+    }
+
+    .card-title{
+        display: flex;
+       color: black;
+       
+    }
+    
+
+}   
+
+
+/* Estilo para as divs */
+.div-cadastro-btn ,#btn-dark-mode{
+ border: none;
+ background-color: #fbf9f100;
+ color: black;
+ margin-right: 20px;
+
+}
 
 
 /* ------------------------------------------------------COMEÇO APRESENTAÇÃO---------------------------------------------------------------- */
