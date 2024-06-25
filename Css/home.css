@@ -56,7 +56,7 @@ li {
 }
 /* --------------------------------MODO ESCURO E CLARO----------------------- */
 body[data-theme="dark"] {
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: #292828;
     color: #fbf9f1;
    
@@ -96,12 +96,20 @@ body[data-theme="dark"] {
         color: rgb(192, 18, 226);
         font-weight: bold;
     }
+
+    .linkNav{
+        color: white;
+    }
+
+    .mae{
+        color: white;
+    }
 }
 
 
 /* Tema claro */
 body[data-theme="light"] {
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: #fbf9f1;
     color: #222121;
 
@@ -163,11 +171,11 @@ a .nav-item {
     display: flex;
     background-color: #070016;
     width: 4px;
-    height:156vh;
+    height:250vh;
     box-shadow: 0px 10px 10px #000000a2;
     position: relative; 
     bottom: 5vh;
-    transform: translateX(61vw)scale(1) rotate(-50deg);
+    transform: translateX(61vw)scale(1) rotate(-58deg);
      z-index: -1;   
 }
 .linha1{
@@ -176,7 +184,7 @@ a .nav-item {
     display: flex;
     background-color: #8C52FF;
     width: 4px;
-    height:199vh;
+    height:250vh;
     box-shadow: 0px 10px 10px #000000a2;
     position: relative; 
     bottom: 5vh;
@@ -363,7 +371,7 @@ p {
 }
 
 
-/* ------------------------------------------------------NOSSOS PROJETOS---------------------------------------------------------------- */
+/* ------------------------------------------------------parceiros---------------------------------------------------------------- */
 .flipLegenda {
     color: #8C52FF ;
     display: flex;
@@ -435,6 +443,79 @@ p {
 }
 
 
+/* ---------------------------------------------------------------------projetos------------------------------------------- */
+.nossosProjetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+   
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw; /* Espaçamento entre os retângulos */
+}
+
+.bone,
+.helpHouse {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    width: 45vw;
+    background-color:#8C52FF;
+    border-radius: 4vw;
+    transition: 0.35s;
+    cursor: pointer;
+  
+}
+.imgHelp{
+    width: 16vw;
+    height: auto;
+    position: relative;
+    right: 2vw;
+}
+
+.imgBone {
+    width: 20vw;
+    height: auto;
+    position: relative;
+    right: 2vw;
+}
+
+.bone:hover,
+.helpHouse:hover {
+    transform: scale(1.2); /* Reduz o tamanho ao passar o mouse */
+  
+}
+.textProjeto{
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 10px 0;
+    font-size: 1em;
+    position: relative;
+    right: 2vw;
+   
+}
+.projetos:hover > .bone:not(:hover),
+.projetos:hover > .helpHouse:not(:hover) {
+    filter: blur(5px); /* Desfoca o elemento não-hover ao passar o mouse em qualquer um dos projetos */
+    transform: scale(0.8);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .svgSeven {
+        width: 50vw; /* Reduz a largura em dispositivos menores */
+    }
+}
 
 
 
@@ -451,16 +532,30 @@ h2 {
 
 
 
-/* ---------------------------------------Contatoform----------------------------------------------------------- */
 
 
-.form-contato input{
+/* ---------------------------------------Contatoform---------- ------------------------------------------------- */
+
+
+
+.containeContato{
+    padding: 10px;
+}
+
+.inputsContato input{
     background-color: #ADACAF;
     border-radius: 90px;
     height: 5vh;
     width:30vw;
+    
 }
 
-.form-contato{
-text-align: left;
+
+.inputsContato textarea{
+    background-color: #ADACAF;
+    border-radius: 50px;
+    height: 15vh;
+    width:30vw;
+    
 }
+
