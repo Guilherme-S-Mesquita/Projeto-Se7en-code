@@ -96,6 +96,23 @@ body[data-theme="dark"] {
         color: rgb(192, 18, 226);
         font-weight: bold;
     }
+
+    .linkNav{
+        color: white;
+    }
+
+    .footerColor{
+        color: white;
+    }
+
+    .subtitulos{
+        color: black;
+    }
+
+    .subtitulos2{
+        color: white;
+    }
+
 }
 
 
@@ -126,7 +143,16 @@ body[data-theme="light"] {
        color: black;
        
     }
-    
+    .subtitulos{
+        color: white; 
+    }
+    .subtitulos2{
+        color: black; 
+    }
+
+    .footerColor{
+        color: black;
+    }
 
 }   
 
@@ -453,14 +479,19 @@ h2 {
 
 /* ---------------------------------------Contatoform----------------------------------------------------------- */
 
-
-.form-contato input{
+.formContato input{
     background-color: #ADACAF;
     border-radius: 90px;
     height: 5vh;
     width:30vw;
+    right: 100%;
+    top:15px;
+
 }
 
-.form-contato{
-text-align: left;
+.formContato {
+    position: relative;
+    right: 5%; 
+    padding: 20px;
+  
 }
