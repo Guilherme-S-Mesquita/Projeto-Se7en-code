@@ -101,9 +101,18 @@ body[data-theme="dark"] {
         color: white;
     }
 
-    .mae{
+    .footerColor{
         color: white;
     }
+
+    .subtitulos{
+        color: black;
+    }
+
+    .subtitulos2{
+        color: white;
+    }
+
 }
 
 
@@ -134,7 +143,16 @@ body[data-theme="light"] {
        color: black;
        
     }
-    
+    .subtitulos{
+        color: white; 
+    }
+    .subtitulos2{
+        color: black; 
+    }
+
+    .footerColor{
+        color: black;
+    }
 
 }   
 
@@ -543,6 +561,7 @@ h2 {
 }
 
 .inputsContato input{
+.formContato input{
     background-color: #ADACAF;
     border-radius: 90px;
     height: 5vh;
@@ -559,3 +578,15 @@ h2 {
     
 }
 
+
+    right: 100%;
+    top:15px;
+
+}
+
+.formContato {
+    position: relative;
+    right: 5%; 
+    padding: 20px;
+  
+}
